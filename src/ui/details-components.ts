@@ -59,4 +59,38 @@ export default class DetailsComponents {
         parent.appendChild(p); // Append the paragraph to the parent
     }
 
+    /**
+     * Creates the wind direction component.
+     */
+    private createWindDirection(): void {
+        this.createCol("wind_dir");
+        const col = checkElement(document.getElementById("wind_dir"));
+        this.createIcon("compass", col);
+        this.createP("wind_dir", col, this.windDirection || "0 °");
+        this.createP("wind_dir", col, "Wind Direction");
+    }
+
+    /**
+     * Creates the wind speed component.
+     */
+    private createWindSpeed(): void {
+        this.createCol("wind_speed");
+        const col = checkElement(document.getElementById("wind_speed"));
+        this.createIcon("wind", col);
+        this.createP("wind_speed", col, this.windSpeed || "0 km/h");
+        this.createP("wind_speed", col, "Wind Speed");
+    }
+
+    /**
+     * Creates the humidity component.
+     */
+    private createHumidity(): void {
+        this.createCol("humidity");
+        const col = checkElement(document.getElementById("humidity"));
+        this.createIcon("droplet", col);
+        this.createP("humidity", col, this.humidity || "0 %");
+        this.createP("humidity", col, "Humidity");
+    }
+
+
 }
