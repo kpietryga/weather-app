@@ -92,5 +92,36 @@ export default class DetailsComponents {
         this.createP("humidity", col, "Humidity");
     }
 
+    /**
+     * Creates the pressure component.
+     */
+    private createPressure(): void {
+        this.createCol("pressure");
+        const col = checkElement(document.getElementById("pressure"));
+        this.createIcon("gauge", col);
+        this.createP("pressure", col, this.pressure || "0");
+        this.createP("pressure", col, "Pressure");
+    }
 
+    /**
+     * Creates the rain component.
+     */
+    private createRain(): void {
+        this.createCol("rain");
+        const col = checkElement(document.getElementById("rain"));
+        this.createIcon("cloud-rain", col);
+        this.createP("rain", col, this.rain || "0");
+        this.createP("rain", col, "Rainfall");
+    }
+
+    /**
+     * Creates all weather detail components.
+     */
+    createAll(): void {
+        this.createWindDirection();
+        this.createWindSpeed();
+        this.createHumidity();
+        this.createPressure();
+        this.createRain();
+    }
 }
