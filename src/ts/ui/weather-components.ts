@@ -51,7 +51,7 @@ export default class WeatherComponents {
         const h3 = document.createElement("h3"); // Create an <h3> element
         this.weather.appendChild(h3); // Append to the weather container
         h3.className = "number"; // Set class name for styling
-        h3.innerText = "Station No: " + this.number; // Set the station number text
+        h3.innerText = "Numer stacji: " + this.number; // Set the station number text
     }
 
     /**

@@ -67,7 +67,7 @@ export default class DetailsComponents {
         const col = checkElement(document.getElementById("wind_dir"));
         this.createIcon("compass", col);
         this.createP("wind_dir", col, this.windDirection || "0 °");
-        this.createP("wind_dir", col, "Wind Direction");
+        this.createP("wind_dir", col, "Kierunek wiatru");
     }
 
     /**
@@ -78,7 +78,7 @@ export default class DetailsComponents {
         const col = checkElement(document.getElementById("wind_speed"));
         this.createIcon("wind", col);
         this.createP("wind_speed", col, this.windSpeed || "0 km/h");
-        this.createP("wind_speed", col, "Wind Speed");
+        this.createP("wind_speed", col, "Prędkośc wiatru");
     }
 
     /**
@@ -89,7 +89,7 @@ export default class DetailsComponents {
         const col = checkElement(document.getElementById("humidity"));
         this.createIcon("droplet", col);
         this.createP("humidity", col, this.humidity || "0 %");
-        this.createP("humidity", col, "Humidity");
+        this.createP("humidity", col, "Wigotność");
     }
 
     /**
@@ -100,7 +100,7 @@ export default class DetailsComponents {
         const col = checkElement(document.getElementById("pressure"));
         this.createIcon("gauge", col);
         this.createP("pressure", col, this.pressure || "0");
-        this.createP("pressure", col, "Pressure");
+        this.createP("pressure", col, "Ciśnienie");
     }
 
     /**
@@ -111,7 +111,7 @@ export default class DetailsComponents {
         const col = checkElement(document.getElementById("rain"));
         this.createIcon("cloud-rain", col);
         this.createP("rain", col, this.rain || "0");
-        this.createP("rain", col, "Rainfall");
+        this.createP("rain", col, "Opady");
     }
 
     /**
