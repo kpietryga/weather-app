@@ -1,6 +1,10 @@
 # IMGW Weather App
 
-A TypeScript-based weather application that fetches and displays current weather data for selected cities. The app includes a search form and dynamically updates the UI with the weather results.
+A TypeScript-based weather application that fetches and displays current weather data for selected cities. The app includes a search form and dynamically updates the UI with weather data retrieved from the Institute of Meteorology and Water Management (IMGW) API.
+
+## Demo
+https://imgw.pietryga.com.pl/
+
 
 ## Features
 
